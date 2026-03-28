@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/NationalParks.xsd">
+               xsi:noNamespaceSchemaLocation=="NationalParks.xsd">
 
-  <NationalPark ID="NP-01" Rating="4.9">
+  <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
     <Phone>888-297-2757</Phone>
@@ -16,33 +16,19 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-02" Rating="4.8">
-    <Name>Yellowstone</Name>
-    <Phone>307-344-7381</Phone>
-    <Phone>307-344-2107</Phone>
-    <Address NearestAirport="Yellowstone Regional Airport">
-      <Number>2</Number>
-      <Street>Officer Row</Street>
-      <City>Yellowstone National Park</City>
-      <State>WY</State>
-      <Zip>82190</Zip>
+  <NationalPark Rating="4.8">
+    <Name>Great Smoky Mountains</Name>
+    <Phone>865-436-1200</Phone>
+    <Address NearestAirport="McGhee Tyson Airport">
+      <Number>107</Number>
+      <Street>Park Headquarters Road</Street>
+      <City>Gatlinburg</City>
+      <State>TN</State>
+      <Zip>37738</Zip>
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-03" Rating="4.9">
-    <Name>Yosemite</Name>
-    <Phone>209-372-0200</Phone>
-    <Phone>209-372-4726</Phone>
-    <Address>
-      <Number>9035</Number>
-      <Street>Village Drive</Street>
-      <City>Yosemite Valley</City>
-      <State>CA</State>
-      <Zip>95389</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark ID="NP-04" Rating="4.8">
+  <NationalPark Rating="4.8">
     <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
     <Address NearestAirport="St. George Regional Airport">
@@ -54,10 +40,36 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-05">
+  <NationalPark Rating="4.8">
+    <Name>Yellowstone</Name>
+    <Phone>307-344-7381</Phone>
+    <Phone>307-344-2109</Phone>
+    <Address NearestAirport="Yellowstone Airport">
+      <Number>2</Number>
+      <Street>Officer Row</Street>
+      <City>Yellowstone National Park</City>
+      <State>WY</State>
+      <Zip>82190</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.9">
+    <Name>Yosemite</Name>
+    <Phone>209-372-0200</Phone>
+    <Address NearestAirport="Fresno Yosemite International Airport">
+      <Number>9035</Number>
+      <Street>Village Drive</Street>
+      <City>Yosemite Valley</City>
+      <State>CA</State>
+      <Zip>95389</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
-    <Phone>970-586-1242</Phone>
+    <Phone>970-586-1204</Phone>
+    <Phone>970-586-1319</Phone>
     <Address NearestAirport="Denver International Airport">
       <Number>1000</Number>
       <Street>US Highway 36</Street>
@@ -67,10 +79,10 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-06" Rating="4.7">
+  <NationalPark Rating="4.7">
     <Name>Acadia</Name>
     <Phone>207-288-3338</Phone>
-    <Address>
+    <Address NearestAirport="Hancock County-Bar Harbor Airpor">
       <Number>25</Number>
       <Street>Visitor Center Road</Street>
       <City>Bar Harbor</City>
@@ -79,23 +91,10 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-07" Rating="4.8">
-    <Name>Great Smoky Mountains</Name>
-    <Phone>865-436-1200</Phone>
-    <Phone>865-436-1294</Phone>
-    <Address NearestAirport="McGhee Tyson Airport">
-      <Number>107</Number>
-      <Street>Park Headquarters Road</Street>
-      <City>Gatlinburg</City>
-      <State>TN</State>
-      <Zip>37738</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark ID="NP-08">
+  <NationalPark>
     <Name>Olympic</Name>
     <Phone>360-565-3130</Phone>
-    <Address>
+    <Address NearestAirport="Seattle-Tacoma International Airport">
       <Number>3002</Number>
       <Street>Mount Angeles Road</Street>
       <City>Port Angeles</City>
@@ -104,20 +103,7 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-09" Rating="4.6">
-    <Name>Joshua Tree</Name>
-    <Phone>760-367-5500</Phone>
-    <Phone>760-367-5522</Phone>
-    <Address NearestAirport="Palm Springs International Airport">
-      <Number>74485</Number>
-      <Street>National Park Drive</Street>
-      <City>Twentynine Palms</City>
-      <State>CA</State>
-      <Zip>92277</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark ID="NP-10" Rating="4.9">
+  <NationalPark Rating="4.9">
     <Name>Glacier</Name>
     <Phone>406-888-7800</Phone>
     <Address NearestAirport="Glacier Park International Airport">
@@ -129,28 +115,27 @@
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-11">
-    <Name>Shenandoah</Name>
-    <Phone>540-999-3500</Phone>
-    <Phone>540-999-3488</Phone>
-    <Address>
-      <Number>3655</Number>
-      <Street>US Highway 211 East</Street>
-      <City>Luray</City>
-      <State>VA</State>
-      <Zip>22835</Zip>
+  <NationalPark Rating="4.6">
+    <Name>Everglades</Name>
+    <Phone>305-242-7700</Phone>
+    <Address NearestAirport="Miami International Airport">
+      <Number>40001</Number>
+      <Street>State Rd 9336</Street>
+      <City>Homestead</City>
+      <State>FL</State>
+      <Zip>33034</Zip>
     </Address>
   </NationalPark>
 
-  <NationalPark ID="NP-12" Rating="4.8">
-    <Name>Bryce Canyon</Name>
-    <Phone>435-834-5322</Phone>
-    <Address NearestAirport="Cedar City Regional Airport">
+  <NationalPark>
+    <Name>Arches</Name>
+    <Phone>435-719-2299</Phone>
+    <Address NearestAirport="Canyonlands Field Airport">
       <Number>1</Number>
-      <Street>Bryce Canyon National Park Road</Street>
-      <City>Bryce Canyon City</City>
+      <Street>Arches Entrance Rd</Street>
+      <City>Moab</City>
       <State>UT</State>
-      <Zip>84764</Zip>
+      <Zip>84532</Zip>
     </Address>
   </NationalPark>
 
