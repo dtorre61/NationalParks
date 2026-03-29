@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://dtorre61.github.io/NationalParks"
+           xmlns="http://dtorre61.github.io/NationalParks"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
 
   <!-- Root element -->
   <xs:element name="NationalParks">
@@ -13,12 +17,12 @@
   <!-- NationalPark type definition -->
   <xs:complexType name="NationalParkType">
     <xs:sequence>
-      <xs:element name="Name"    type="xs:string"  minOccurs="1" maxOccurs="1"/>
-      <xs:element name="Phone"   type="xs:string"  minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="Name"    type="xs:string"   minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Phone"   type="xs:string"   minOccurs="1" maxOccurs="unbounded"/>
       <xs:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xs:sequence>
-    <!-- Rating is optional -->
-    <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+    <!-- Rating is optional (implied) -->
+    <xs:attribute name="Rating" type="xs:string" use="optional"/>
   </xs:complexType>
 
   <!-- Address type definition -->
